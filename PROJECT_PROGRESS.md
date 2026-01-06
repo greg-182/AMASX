@@ -21,7 +21,7 @@
 ### Immediate (Week 1)
 1. **Data Collection**
    - Identify reliable AMA SX data sources
-   - Scrape/download 2022-2024 race results
+   - Scrape/download 2023-2025 race results
    - Collect rider statistics and track information
    - Get PulpMX fantasy scoring rules
 
@@ -84,7 +84,7 @@
 ## Challenges & Notes
 
 ### Data Collection Challenges
-- Need to verify data availability for 2022-2024
+- Need to verify data availability for 2023-2025
 - May need web scraping if no API available
 - Fantasy scoring rules need to be documented
 

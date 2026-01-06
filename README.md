@@ -40,7 +40,7 @@ AMASX/
 ```
 
 ## Data Requirements
-- **Historical Race Results** (2022-2024): Finishing positions, lap times, qualifying results
+- **Historical Race Results** (2023-2025): Finishing positions, lap times, qualifying results
 - **Rider Information**: Career stats, injuries, team changes, bike specs
 - **Track Data**: Track characteristics, weather conditions
 - **Fantasy Scoring**: PulpMX scoring rules and historical fantasy results
@@ -73,7 +73,7 @@ AMASX/
 
 ## Getting Started
 1. Install dependencies: `pip install -r requirements.txt`
-2. Scrape/collect AMA SX data (2022-2024)
+2. Scrape/collect AMA SX data (2023-2025)
 3. Run data exploration notebook
 4. Build supervised baseline
 5. Implement RL agent

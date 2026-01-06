@@ -177,7 +177,8 @@
 ## Next Steps
 
 1. **Build web scraper for MXGPResults.com**
-   - Start with 2024 season
+   - 2023- 2025 season
+   - both 250 and 450
    - Extract race results
    - Store in structured format (CSV/JSON)
 
@@ -186,7 +187,7 @@
    - Verify rider names consistency
    - Handle DNF/DNS cases
 
-3. **Expand to 2022-2023**
+3. **Expand to 2023-2025**
    - Apply same scraper
    - Build complete dataset
 
