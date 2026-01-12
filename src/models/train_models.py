@@ -225,7 +225,14 @@ class RacePredictor:
 
         for group_id in test_df['group_id'].unique():
             group = test_df[test_df['group_id'] == group_id].copy()
-            actual_winner = group[group['position'] == 1]['rider'].values[0]
+
+            # Check if there's a winner in this group (position == 1)
+            winner_rows = group[group['position'] == 1]
+            if len(winner_rows) == 0:
+                # Skip this race if no winner (incomplete data)
+                continue
+
+            actual_winner = winner_rows['rider'].values[0]
 
             if self.model_type == 'rank':
                 # For rank model, lower score = better rank
@@ -240,7 +247,7 @@ class RacePredictor:
                 winner_correct += 1
             total_races += 1
 
-        winner_acc = winner_correct / total_races
+        winner_acc = winner_correct / total_races if total_races > 0 else 0
         print(
             f"  Winner Prediction Accuracy: {winner_acc:.3f} ({winner_correct}/{total_races})")
 
